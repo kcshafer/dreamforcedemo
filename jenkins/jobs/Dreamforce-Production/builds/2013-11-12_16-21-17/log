@@ -1,0 +1,32 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/Shared/Jenkins/Home/jobs/Dreamforce-Production/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/kcshafer/eredemo
+FATAL: Failed to fetch from https://github.com/kcshafer/eredemo
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Failed to fetch from https://github.com/kcshafer/eredemo
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:612)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:836)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:861)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1411)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:652)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:88)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:557)
+	at hudson.model.Run.execute(Run.java:1665)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:230)
+Caused by: hudson.plugins.git.GitException: Error performing git command
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:990)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:920)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.fetch(CliGitAPIImpl.java:187)
+	at hudson.plugins.git.GitAPI.fetch(GitAPI.java:229)
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:610)
+	... 10 more
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.UNIXProcess.waitFor(UNIXProcess.java:210)
+	at hudson.Proc$LocalProc.join(Proc.java:319)
+	at hudson.Proc.joinWithTimeout(Proc.java:168)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:977)
+	... 14 more

@@ -1,0 +1,15 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/Shared/Jenkins/Home/jobs/Dreamforce-Production/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/kcshafer/eredemo
+Checking out Revision 2f1efe4b44682c499565f84f328167caa6654c34 (origin/release/11/12/2013)
+Unpacking http://archive.apache.org/dist/ant/binaries/apache-ant-1.9.2-bin.zip to /Users/Shared/Jenkins/Home/tools/hudson.tasks.Ant_AntInstallation/ant on Jenkins
+[workspace] $ /Users/Shared/Jenkins/Home/tools/hudson.tasks.Ant_AntInstallation/ant/bin/ant
+Buildfile: /Users/Shared/Jenkins/Home/jobs/Dreamforce-Production/workspace/build.xml
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+Target "test" does not exist in the project "Sample usage of Salesforce Ant tasks". 
+
+Total time: 0 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

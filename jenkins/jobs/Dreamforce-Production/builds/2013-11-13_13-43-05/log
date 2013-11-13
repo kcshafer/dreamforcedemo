@@ -1,0 +1,12 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/Shared/Jenkins/Home/jobs/Dreamforce-Production/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/kcshafer/eredemo
+Checking out Revision 2f1efe4b44682c499565f84f328167caa6654c34 (origin/release/11/12/2013)
+[workspace] $ /bin/sh -xe /var/folders/4m/q3rgyt5n12z9hlp3nn64pn3000007h/T/hudson1255397215939362577.sh
++ chmod 755 login.sh
++ ./login.sh -u production@ere.dreamforce.com -p dreamforce13
++ ant buildAll
+/var/folders/4m/q3rgyt5n12z9hlp3nn64pn3000007h/T/hudson1255397215939362577.sh: line 5: ant: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

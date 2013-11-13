@@ -1,0 +1,9 @@
+commit 6bcea7154bea260a752f26375e8357c87ecc9e8d
+tree 84f082fbe8183667e8e24ea845627f82a28a15b2
+parent 2f1efe4b44682c499565f84f328167caa6654c34
+author kcshafer <kcplusplus@live.com> 1384369411 -0500
+committer kcshafer <kcplusplus@live.com> 1384369411 -0500
+
+    Removing controller reference
+
+:100644 100644 b7e45e6b2fe68870ef649d953dad6e86691ae282 9c58fb852b1f80c9f12737bcf7e96145f29ff91a M	src/pages/TestPage.page

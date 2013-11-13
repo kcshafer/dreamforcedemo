@@ -1,0 +1,19 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/Shared/Jenkins/Home/jobs/Dreamforce-Production/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/kcshafer/eredemo
+Checking out Revision 2f1efe4b44682c499565f84f328167caa6654c34 (origin/release/11/12/2013)
+[workspace] $ /bin/sh -xe /var/folders/4m/q3rgyt5n12z9hlp3nn64pn3000007h/T/hudson2094371206448050158.sh
++ chmod 755 login.sh
++ ./login.sh -u production@ere.dreamforce.com -p dreamforce13
+[workspace] $ /Users/Shared/Jenkins/Home/tools/hudson.tasks.Ant_AntInstallation/ant/bin/ant buildAll
+Buildfile: /Users/Shared/Jenkins/Home/jobs/Dreamforce-Production/workspace/build.xml
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuildAll:
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/Users/Shared/Jenkins/Home/jobs/Dreamforce-Production/workspace/build.xml:14: Invalid username, password, security token; or user locked out. Are you at a new location? When accessing Salesforce--either via a desktop client or the API--from outside of your company?s trusted networks, you must add a security token to your password to log in. To receive a new security token, log in to salesforce.com at http://login.salesforce.com and click Setup | My Personal Information | Reset Security Token.
+
+Total time: 2 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

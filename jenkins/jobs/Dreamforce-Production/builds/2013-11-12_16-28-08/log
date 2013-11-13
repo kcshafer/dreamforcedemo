@@ -1,0 +1,31 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/Shared/Jenkins/Home/jobs/Dreamforce-Production/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from git@github.com:kcshafer/eredemo.git
+FATAL: Failed to fetch from git@github.com:kcshafer/eredemo.git
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Failed to fetch from git@github.com:kcshafer/eredemo.git
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:612)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:836)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:861)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1411)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:652)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:88)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:557)
+	at hudson.model.Run.execute(Run.java:1665)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:230)
+Caused by: hudson.plugins.git.GitException: Command "fetch -t git@github.com:kcshafer/eredemo.git +refs/heads/*:refs/remotes/origin/*" returned status code 128:
+stdout: 
+stderr: ssh: Could not resolve hostname kcshafer: nodename nor servname provided, or not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:981)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:920)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.fetch(CliGitAPIImpl.java:187)
+	at hudson.plugins.git.GitAPI.fetch(GitAPI.java:229)
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:610)
+	... 10 more
