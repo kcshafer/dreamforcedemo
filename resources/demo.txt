@@ -1,0 +1,43 @@
+"Sandbox" = kc@ere.dreamforce.com
+"Production" = production@ere.dreamforce.com
+
+***make sure build.properties on git is always pointed at production to be prepared for jenkins ****
+
+Part 1 Migration Tool - 
+1.Login to salesforce. 
+2.Download migration tool. 
+3.unzip ~/Downloads/salesforce_ant_29.0.zip - unzip the ant tool 
+4.cd ~/Downloads/salesforce_ant_29.0 -  ant directory 
+5.cp ant-salesforce.jar /usr/local/Cellar/ant/1.9.2/libexec/lib #copy jar to ant location
+6.mkdir ~/workspace/eredemo
+7.mkdir ~/workspace/eredemo/src
+7.cp sample/build.properties ~/workspace/eredemo/build.properties | cp sample/build.xml ~/workspace/eredemo/build.xml | cp sample/codepkg/package.xml ~/workspace/eredemo/src/package.xml | mkdir ~/workspace/eredemo/src/pages | mkdir ~/workspace/eredemo/src/triggers | cd ~/workspace/eredemo ## move the files we want and delete the sample folder 
+7. Configure package xml, build xml and properties and explain the purpose brief. 
+8. run some commands
+
+Part 2 GitHub 
+1.Make git repository 
+2.git init 
+3.git remote add origin https://github.com/kcshafer/eredemo.git
+4.git add src/
+5.git commit -m "Initial Commit"
+6.git push origin master 
+
+Part 3 Team Development
+0.cp ~/workspace/dreamforcedemo/build.xml 
+1.git-flow init 
+2.git-flow feature start TestPage
+3.cp ~/workspace/dreamforcedemo/src/pages/TestPage.page* src/pages/
+4.sublime build command b 
+5.git add src/pages/
+6.git commit -m "New visualforce page"
+7.git push -u origin feature/TestPage
+8.open pull request to develop branch
+
+Part 4 Continous Integration
+1.merge pull request to develop
+2.git checkout develop 
+3.git pull origin develop
+4.git flow release start mm/dd/yy
+5.git push -u origin release/mm/dd/yy
+6.http://localhost:8080/
